@@ -42,5 +42,9 @@ while True:
     moral_response = llm.invoke(moral_prompt.invoke({"story_with_twist": twist_response.content}))
 
     print("\n--- Generated Story ---")
+    print(story_response.content)
+    print("\n twist")
+    print(twist_response.content)
+    print("\n moral")
     print(moral_response.content)
     print("-----------------------\n")

@@ -12,7 +12,10 @@ Steps to create the virtual environment with pip
 Select the folder of your project
 Open a terminal using Command Prompt
 
+1.
 python -m venv .venv
+
+2.
 
 .\.venv\Scripts\activate.bat
 
@@ -20,13 +23,17 @@ pip install requests
 
 pip freeze > requirements.txt
 
-
+3.
 Select Python interpreter (using Ctrl-Shift-P)
 
 
 
-
+4.
 pip install langchain_openai langchain dotenv langchain_core
+pip install -m requirements.txt
+
+5. 
+creation of .env file
 
 ####################################################
 

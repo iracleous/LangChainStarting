@@ -12,7 +12,7 @@ dotenv.load_dotenv()
 llm = ChatOpenAI(
         model=os.getenv("OPENAI_MODEL"),  # default to gpt-4o
         api_key=os.getenv("OPENAI_API_KEY"),
-        temperature=0
+        temperature=0.8
     )
 
 # 2. Import necessary LCEL components

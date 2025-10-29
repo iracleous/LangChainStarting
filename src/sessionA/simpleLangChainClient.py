@@ -1,6 +1,10 @@
 """
 """
 
+import time
+start = time.time()
+
+
 from langchain_openai import ChatOpenAI
  
 # 1. Initialize the LLM
@@ -28,3 +32,7 @@ chain = prompt | llm  # "pipe" operator combines Runnable objects
 # Invoke the chain
 response = chain.invoke({"topic": "black holes"})
 print(response.content)    
+
+
+end = time.time()
+print(f"Execution time: {end - start} seconds")

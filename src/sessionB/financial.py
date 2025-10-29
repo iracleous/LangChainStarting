@@ -77,5 +77,6 @@ while True:
 
 
 # Calculate elapsed time
+end_time = time.time()
 elapsed = end_time - start_time
 print(f"Elapsed time: {elapsed:.4f} seconds")
