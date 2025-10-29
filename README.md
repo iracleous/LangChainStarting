@@ -13,9 +13,13 @@ Select the folder of your project
 Open a terminal using Command Prompt
 
 python -m venv .venv
+
 .\.venv\Scripts\activate.bat
+
 pip install requests
+
 pip freeze > requirements.txt
+
 
 Select Python interpreter (using Ctrl-Shift-P)
 
